@@ -1,3 +1,8 @@
+section .data
+  counter_rec_file db "counter_rec.txt", 0
+  counter     db "10000", 0
+  counter_len equ $ - counter
+
 section .text
 global _start
 
@@ -31,8 +36,3 @@ end_count:
   int 0x80
 
   ret
-
-section .data
-  counter_rec_file db "counter_rec.txt", 0
-  counter     db "10000", 0
-  counter_len equ $ - counter
