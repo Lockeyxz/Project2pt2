@@ -22,7 +22,7 @@ end_count:
   mov eax, 5
   mov ebx, counter_rec_file
   mov ecx, 0x101
-  mov edx, 0o666
+  mov edx, 0777o
   int 0x80
 
   mov eax, 4
